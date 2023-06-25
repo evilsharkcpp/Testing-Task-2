@@ -102,6 +102,11 @@ struct Point2 {
     /// <returns>return normalized point</returns>
     Point2 getNormalized() const {
         T norm { sqrt(x * x + y * y) };
+        
+        if(norm == 0) {
+            throw std::exception("division by 0");
+        }
+        
         return Point2(x / norm, y / norm);
     }
 

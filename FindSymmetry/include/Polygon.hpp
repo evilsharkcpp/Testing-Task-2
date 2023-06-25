@@ -64,7 +64,7 @@ class Polygon {
             for(auto& node : m_nodes) {
                 T nx { node.x * (cos(angle) + (1 - cos(angle)) * pow(axis.x, 2)) + 
                             node.y * ((1 - cos(angle)) * axis.x * axis.y) },
-                       ny{ node.x * ((1 - cos(angle)) * axis.x * axis.y) + 
+                  ny{ node.x * ((1 - cos(angle)) * axis.x * axis.y) + 
                             node.y * (cos(angle) + (1 - cos(angle)) * pow(axis.y, 2)) };
                 node.x = nx;
                 node.y = ny;
