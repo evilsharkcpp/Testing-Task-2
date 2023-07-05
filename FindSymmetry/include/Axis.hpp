@@ -18,7 +18,7 @@ class Axis {
         /// </summary>
         /// <param name="a">first point</param>
         /// <param name="b">second point</param>
-        Axis(Point2<T>& a, Point2<T>& b) : m_start(a), m_end(b) {}
+        Axis(const Point2<T>& a, const Point2<T>& b) : m_start(a), m_end(b) {}
 
         /// <summary>
         /// Compare two axis with epsilon presision

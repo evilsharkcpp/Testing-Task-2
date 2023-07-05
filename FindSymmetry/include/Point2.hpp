@@ -91,7 +91,7 @@ struct Point2 {
         return equalValues(x, p.x, epsilon) && equalValues(y, p.y, epsilon);
     }
 
-    bool Point2::equalValues(double a, double b, double epsilon) {
+    bool equalValues(double a, double b, double epsilon) {
         double max = std::max({ 1.0, std::fabs(a) , std::fabs(b) });
         return std::fabs(a - b) <= epsilon * max;
     }
